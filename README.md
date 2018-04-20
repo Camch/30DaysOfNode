@@ -1,4 +1,4 @@
 # 30DaysOfNode
-Challenge accpeted 20th April 2018.
+Challenge accepeted 20th April 2018.
 
-It's not like have anything other to do.
+It's not like I have anything other to do.
