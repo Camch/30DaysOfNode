@@ -79,3 +79,31 @@ console.log(arr10);
 console.log(arr11)
 var newArray = arr10.concat(arr11)
 console.log(newArray);
+
+//indexOf
+console.log("  \n ===== indexOf ====");
+arr12 = [5, 2, 8, 5, 6];
+console.log(arr12);
+var pos = arr12.indexOf(8);
+console.log("index of 8 is " + pos);
+var pos1 = arr.indexOf(5);
+console.log("index of 5 is " + pos1);
+
+//lastIndexOf
+console.log("  \n ===== lastIndexOf ====");
+arr13 = [5, 2, 8, 5, 6];
+console.log(arr13);
+var pos = arr13.lastIndexOf(5);
+console.log("index of 6 is " + pos);
+
+//join
+//indexof
+console.log("  \n ===== join ====");
+arr14 = [5, 2, 8, 5, 6];
+arr15 = ['a', 'b', 'c', 'd'];
+console.log(arr14);
+console.log(arr15);
+var str = arr14.join();
+var str1 = arr15.join(" : ");
+console.log(str);
+console.log(str1);
