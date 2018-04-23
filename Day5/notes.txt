@@ -1,0 +1,34 @@
+error.code : This is a string label which is used to identify the type of error. It specifies errors in the form of node.js error codes
+
+error.stack : It returns a string in which details are provided about where in the code the eror was instantiated.
+
+Error.captureStackTrace : This is usede to create a .stack property on the target object which returns the location in the code where Error.captureStackTrace() was called. It returns the data in the form of string.
+ 
+Error.stackTraceLimit : This property specifies number of stack frames captured by stack trace. It can be any valid JS number however 10 is the default value. If set to a non-number or negative, then stack trace will not return any frames.
+
+========================
+
+1. Synchronous API: These are those APIs which is blocking method that does not accept callback function and uses <throw> to report errors
+
+2. Asynchronous API: Errors which occurs in asynchronous APIs can be reported in multiple ways as shown below:
+    - Error can be routed to the object's <error> event if an asynchronous event is called on an object.
+
+connection.on('error') => {
+    //This is the error event which is used to handle the error properly
+    console.error(err);
+}
+
+* Asynchronous methods in node.js accept an error object passed as the first argument given that method should accept callbacks. These errors are handled in the following way:
+*see async-file
+
+========================
+
+About Errors:
+
+1. Standard JavaScript errors:
+* <URI> error: global URI handling function is misused.
+* <Eval> error: call to eval() fails.
+* <Type> error: subclass of error which shows that the argument is not of allowed type.
+* <Range> error: argument was not accepted in Range
+* <Syntax> error: not valid JavaScript
+* <Reference> error: access to non-existing variable
