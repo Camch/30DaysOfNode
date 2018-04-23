@@ -1,0 +1,5 @@
+By regular expression literals : In this , the pattern to be matched is enclosed between the / (slashes) as shown below :
+
+var reg = /ab*/;    //will match a, ab, abb but NO b, bc etc
+
+var reg2 = new RegExp('ab*'); //does the same thing as thg reg above
