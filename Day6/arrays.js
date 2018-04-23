@@ -70,3 +70,12 @@ arr9 = ['b','e','a','o','p','n','r'];
 console.log(arr9);
 arr9.splice(2,2); //removing
 console.log(arr9);
+
+//concat
+console.log("  \n ===== concat ====");
+arr10 = ['tomato', 'pineapple'];
+arr11 = ['mango', 'peach', 'apple']
+console.log(arr10);
+console.log(arr11)
+var newArray = arr10.concat(arr11)
+console.log(newArray);
