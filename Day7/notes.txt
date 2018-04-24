@@ -1,0 +1,56 @@
+NPM = Node Package Manager
+It's the package manager for node.js applications.
+It helps you install, update, remove and publish packages.
+Node.js is the largest ecosystem of open source online libraries.
+
+NPM is installed along with node.js
+
+Update: npm install @latest -g
+    Check version: npm -v
+
+**package.json**
+1. manages the locally installed packages
+2. serves as a documentation on which our project depends
+3. Like a directory which keeps track of all the 
+dependencies our project is using.
+4. We can specify the versions of packages we're using in our project.
+
+**Create package.json**
+> npm init
+> npm init --yes
+
+If we're having a package.json file in our project, then we can install all our dependencies using just:
+> npm install command.
+It will not install all the dependencies mentioned in package.json
+
+** Installing packages via NPM ** 
+1. Locally:
+We install packages locally when we need to require them in our application. Then syntax for downloading a package locally is 
+> npm install <package_name>
+i.e > npm install grannit
+    This command will create node_modules folder in your pwd
+    and download the package in that directory.
+TEST: We can check if >npm install 
+worked by manually check whether the directory with the
+name if node_modules exists or not.
+And, if node_modules directory exists, does it contain
+a directory for the package we installed.
+
+2.Globally:
+We install packages globally when we want to use it as
+a command line tool or run in the background for example forever
+, grunt-cli. The syntax for global download of packages is 
+> npm install -g <package_name>.
+i.e: > npm install -g forever
+
+** Install specific version of a package **
+Exact verison:
+> npm install express@4.15.1 
+=============================
+NOT-exact version
+> npm install express@^4.0.0
+
+** Updating a package **
+1. Updating local packages:
+> npm update
+Run this command in the same folder as package.json file
