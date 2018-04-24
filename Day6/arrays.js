@@ -97,7 +97,6 @@ var pos = arr13.lastIndexOf(5);
 console.log("index of 6 is " + pos);
 
 //join
-//indexof
 console.log("  \n ===== join ====");
 arr14 = [5, 2, 8, 5, 6];
 arr15 = ['a', 'b', 'c', 'd'];
@@ -107,3 +106,81 @@ var str = arr14.join();
 var str1 = arr15.join(" : ");
 console.log(str);
 console.log(str1);
+
+//slice
+console.log("  \n ===== slice ====");
+arr16 = [5, 2, 8, 5, 6];
+arr17 = ['a', 'b', 'c', 'd'];
+console.log(arr16);
+console.log(arr17);
+var str = arr16.slice(2,4);
+var str1 = arr17.join(-2,-1);
+console.log(str);
+console.log(str1);
+
+//every
+console.log(" \n ===== every =====");
+arr18 = [2,4,6,8,10];
+arr19 = [2,3,4,6,8];
+function even(value) {
+    if ((value % 2) == 0 ){
+        return true;
+    } else {
+        return false;
+    }
+}
+var out = arr18.every(even);
+var out1 = arr19.every(even);
+console.log("Output of array 1 : " + out);
+console.log("Output of array 2 :" + out1);
+
+//filter
+console.log(" \n ==== filter =====");
+arr20 = [2,4,6,8,10];
+arr21 = [2,3,4,6,8];
+function even(value) {
+    if ((value % 2) == 0 ){
+        return true;
+    } else {
+        return false;
+    }
+}
+var out2 = arr20.filter(even);
+var out3 = arr21.filter(even);
+console.log("Output of array 1 : " + out2);
+console.log("Output of array 2 :" + out3);
+
+//find
+console.log(" \n ==== find =====");
+arr22 = [2,4,6,8,10];
+arr23 = [2,3,4,7,8];
+function odd(value) {
+    if ((value % 2) == 1 ){
+        return true;
+    } else {
+        return false;
+    }
+}
+var out4 = arr22.find(odd);
+var out5 = arr23.find(odd);
+console.log("Output of array 1 : " + out4);
+console.log("Output of array 2 :" + out5);
+
+//forEach
+console.log("==== forEach ====");
+var arr24 = ['1', '2', '3', '5', '8'];
+arr24.forEach( function(element) {
+    console.log(element);
+});
+
+//reduce
+console.log("==== reduce ====");
+arr25= [5, 5, 8, 7, 6];
+console.log(arr25);
+
+function mul(value, total) {
+    total = value * total;
+    return total;
+}
+var output = arr25.reduce(mul);
+console.log("The product of the array is : " + output);
