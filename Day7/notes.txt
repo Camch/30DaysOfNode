@@ -54,3 +54,35 @@ NOT-exact version
 1. Updating local packages:
 > npm update
 Run this command in the same folder as package.json file
+TEST:
+> npm outdated
+if there is no output after this, it means that all packages are updated
+
+2. Updating global packages:
+> npm install -g forever
+
+3. Find global outdated packages:
+>npm outdated -g --depth=0
+
+It will output a table containing:
+    package: contains the name of the package
+    current: the current version of the package installed
+    wanted: specifies the maximum version of the package as mentioned in the package.json that satisfies semver
+            it shows the current installed version if we don't have semver
+    latest: specifies latest available global -g or the package is not included in package.json
+    location: specifies the location of the installed package
+
+ == Update all outdated packages (Global) ==
+ > npm update -gl
+
+ *** Removing a Packge ***
+ 1. Removing local packages
+    >npm uninstall gannit
+ALSO removing the package.json
+    >npm install --save grannit
+IF we have installed devDepencendy
+    >npm uninstall --save-dev gannit
+
+2. Removing for global packages:
+    >npm uninstall -g forever
+    
