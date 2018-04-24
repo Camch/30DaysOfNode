@@ -14,3 +14,13 @@ Every hash generated using hashing is:
 
 - Irreversible: Generated hashes are irreversible in nature. We can not change the hash to the input text again.
 
+*** What is hmach? ***
+keyed-Hash message authentication code) is a kind of MAC
+(Message authentication code) which involves performing
+the hash funcitons using a secret cryptographic key.
+
+Just like hash, in HMAC also every generated hash using algorithm is:
+
+------
+hmac will be used in the same way as mac for 
+all the algorithms you've already created
