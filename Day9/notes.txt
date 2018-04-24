@@ -1,0 +1,16 @@
+crypto in node.js is used to provide cryptographic functionalities
+It includes a set of wrappers for OpenSSL's hash, HMAC. verify, cipher. deciper and sign funcitons.
+
+*** What is hasing? ***
+Hashing is a process of generating a fixed length of value from a string using mathmematical functions.
+It is used for providing security.
+Every hash generated using hashing is:
+- Unique: In hashing, for every unique input -> unique output
+          we will always get the same output for the same input data.
+          Slightly change of the input will change the output to a large extent.
+
+- Fixed length: hashing algorithms always generate the has with the same length.
+                The length of input does not affect the length of the output.
+
+- Irreversible: Generated hashes are irreversible in nature. We can not change the hash to the input text again.
+
