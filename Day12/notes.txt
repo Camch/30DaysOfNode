@@ -1,0 +1,8 @@
+What is MongoDB?
+* NoSQL database
+* Scalable, open source, high performance, document-oriented database designed by keeping developers agility in mind.
+* Does not store data in table and rows as in MySQL
+* Stores data in JSON.like documents with dynamic schema.
++ Dynamic schema: if we have flexible schema then it is ideal for JSON-like documents as in MongoDB it is difficult to impleent it in a good manner in Relational databases.
++ Scalability: MongoDB is highly Scalable
++ Cheap: Can be downloaded free of cost
