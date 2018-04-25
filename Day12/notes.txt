@@ -6,3 +6,4 @@ What is MongoDB?
 + Dynamic schema: if we have flexible schema then it is ideal for JSON-like documents as in MongoDB it is difficult to impleent it in a good manner in Relational databases.
 + Scalability: MongoDB is highly Scalable
 + Cheap: Can be downloaded free of cost
+
