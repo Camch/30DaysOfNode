@@ -1,0 +1,7 @@
+What is express.js?
+* A mini node.js web apps framework
+* Flexible and provides simple APIs used for building backend of websites and mobile applications.
+* Open-source and currently maintained by node.js foundation.
++ Makes routing pretty easy
++ Built on top of node.js so fast I/O
+
