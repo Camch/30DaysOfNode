@@ -1,0 +1,36 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Signup Form | </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class "col-md-3">
+            <!--- BLANK DIV-->
+        </div>
+        <div class="col-md-6 main">
+            <!--Form Tag starts here -->
+            <!-- Action attribute is the route on backend. Method is POST-->
+            <form action="/sign_up" method="post">
+                <input class="box" type="text" name="name" id="name" placeholder="Enter your Password" required/> <br>
+                <input class="box" type="email" name="email" id="email" placeholder="Enter your email" required/> <br>
+                <input class="box" type="password" name="password" id="password" placeholder "Enter your password" required /> <br>
+                <input class="box" type="text" name="phone" id="phone" placeholder="Enter your phone number" required/> <br>
+                <input type="submit" id="submitDetails" name="submitDetails" value="Submit Your Details" /> <br>
+
+            </form>
+        </div>
+        <div class="col-md-3">
+            <!--BLANK DIV-->
+        </div>
+    </div>
+</body>
+</html>
