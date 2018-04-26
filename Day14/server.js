@@ -10,12 +10,12 @@ console.log("Server listening at: 3000");
 
 //Handling the default route
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + 'index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 //Handling the route for admin
 app.get('/admin', function (req, res) {
-    res.sendFile(__dirname + 'admin.html');
+    res.sendFile(__dirname + '/admin.html');
 });
 
 //Code for sockets
