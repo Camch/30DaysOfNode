@@ -1,0 +1,44 @@
+Streams
+* Streams are used to handle streaming data in node.js
+* Readble, writable or both
+* All streams are instances of eventEmitter class
+* We can use the stream module via requiring in the following way
+    > var stream = require('stream');
+
+Types of streams
+1. Readable stream: perform read operations
+2. Writable streams: perform write operations
+3. Duplex stream: implements both readable and writable streams
+4. Transform stream: duplex streams that can transform or modify data as it is read and written.
+   Also, in transform stream output is in some way related to the input.
+
+READABLE stream:
+Modes: These are the two modes of readbles
+1. paused:
+    - If the readable is in paused mode, then we need to call 
+    stream.read() explicitly to read the chunks of data.
+    - By default, all readable streams are in paused mode
+    - Switchable to pause mode by caling streams.pause() method
+    - stream.unpipe() method pipe destinations are available
+
+2. flwing: 
+- If the readble in flowing mode, then the data is successfully emitted.
+- Switch the readble stream to flowing mode 
+- stream.pipe() switch readable stream
+- readable is in flowing mode and there is no consumer
+
+EXAMPLES:
+HTTP request (Server)
+HTTP responses (Client)
+fs module read streamszlib module
+crypto module
+TCP sockets
+process.stdin
+
+Events:
+- readable: when data is available to be read from the stream
+- data: stream is vacating the ownership of the chunk of data
+- error: when the stream is unable to generate data due to some internal error or when stream tries to push invalid chunk of data
+- close: the stream is closed. Indicates that no more events will be emitted and no further computation will occur.
+- end: all data is read. It indicates that there is no more data to be consumed.
+
